@@ -1,0 +1,115 @@
+/* Fondo con degradado sobrio en tonos verde y amarillo */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to bottom, #A2A92E, #F4E285); /* Verde oliva a amarillo suave */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background: rgba(0, 51, 0, 0.8); /* Verde oscuro translúcido */
+    padding: 20px;
+    color: white;
+    border-bottom: 4px solid #F4E285; /* Línea en amarillo */
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.subtitulo {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 51, 0, 0.9); /* Verde oscuro */
+    border-radius: 5px;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F4E285; /* Amarillo suave */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    background: #F4E285; /* Amarillo suave */
+    color: #2E4D00; /* Verde más oscuro */
+}
+
+/* Sección de bienvenida */
+#inicio {
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco traslúcido */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#inicio h2 {
+    color: #2E4D00; /* Verde sobrio */
+}
+
+/* Secciones ocultas por defecto */
+.seccion {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    color: #333;
+}
+
+/* Mostrar solo la sección activa */
+.seccion:not(.oculto) {
+    display: block;
+}
+
+/* Galería de imágenes */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.galeria img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #A2A92E; /* Verde oliva */
+}
+
+/* Pie de página */
+footer {
+    background: rgba(0, 51, 0, 0.8); /* Verde oscuro translúcido */
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    border-top: 4px solid #F4E285; /* Amarillo suave */
+}

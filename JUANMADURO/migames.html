@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuanMaduro - Platanitos con Sabor Auténtico</title>
+    <meta name="description" content="Descubre la historia, fabricación, productos, recetas, cultivo y beneficios de los deliciosos platanitos JuanMaduro.">
+    <link rel="stylesheet" href="migames.css">
+    <script>
+        function mostrarSeccion(id) {
+            // Ocultar la sección de bienvenida al seleccionar cualquier botón
+            document.getElementById('inicio').style.display = 'none';
+
+            // Ocultar todas las demás secciones
+            document.querySelectorAll('.seccion').forEach(section => {
+                section.classList.add('oculto');
+            });
+
+            // Mostrar la sección seleccionada
+            document.getElementById(id).classList.remove('oculto');
+            window.scrollTo(0, 0); // Lleva al inicio de la página
+        }
+    </script>
+</head>
+<body>
+ 
+    <header>
+        <div class="container">
+            <h1>JuanMaduro - El Auténtico Sabor del Plátano</h1>
+            <p class="subtitulo">Disfruta de la calidad y el sabor inigualable de nuestros platanitos.</p>
+        </div>
+    </header>
+ 
+    <nav>
+        <ul>
+            <li><a onclick="mostrarSeccion('historia')">Historia</a></li>
+            <li><a onclick="mostrarSeccion('fabricacion')">Fabricación</a></li>
+            <li><a onclick="mostrarSeccion('productos')">Productos</a></li>
+            <li><a onclick="mostrarSeccion('recetas')">Recetas</a></li>
+            <li><a onclick="mostrarSeccion('cultivo')">Cultivo</a></li>
+            <li><a onclick="mostrarSeccion('beneficios')">Beneficios</a></li>
+            <li><a onclick="mostrarSeccion('contacto')">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- Página principal con descripción e imágenes (solo antes de seleccionar un botón) -->
+        <section id="inicio">
+            <h2>Bienvenidos a JuanMaduro</h2>
+            <p>Bienvenidos a JuanMaduro
+                En JuanMaduro, nos enorgullece ser una empresa dedicada a ofrecer productos de la más alta calidad, resaltando el sabor auténtico y natural del plátano. Nuestro compromiso con la excelencia nos impulsa a seleccionar cuidadosamente los mejores ingredientes y a emplear procesos innovadores que garantizan una experiencia única en cada bocado.</p>
+            <div class="galeria">
+                <img src="loco.jpeg" alt="Imagen de presentación">
+                <img src="info nu.jpeg" alt="Cultivo de plátanos">
+            </div>
+        </section>
+
+        <!-- Secciones ocultas por defecto -->
+        <section id="historia" class="seccion oculto">
+            <h2>Nuestra Historia</h2>
+            <p>En JuanMaduro, nuestra historia es el reflejo de una pasión arraigada en la tradición y el compromiso con la calidad. Desde nuestros inicios, nos hemos dedicado a llevar el auténtico sabor del plátano a cada hogar, convirtiendo este fruto en una experiencia única para los paladares más exigentes.
+
+                Nuestro viaje comenzó con una visión clara: transformar el plátano en un producto versátil, delicioso y accesible para todos. Inspirados en la riqueza de la tierra y en la sabiduría de generaciones de agricultores, en JuanMaduro seleccionamos cuidadosamente los mejores plátanos, asegurando que cada uno cumpla con los más altos estándares de frescura y sabor.</p>
+            <div class="galeria">
+                <img src="granja.jpeg" alt="Historia 1">
+                <img src="platano.jpeg" alt="Historia 2">
+            </div>
+        </section>
+ 
+        <section id="fabricacion" class="seccion oculto">
+            <h2>Fabricación</h2>    
+            <p>En JuanMaduro, seguimos un proceso meticuloso para garantizar platanitos crujientes y de alta calidad. Todo comienza con la selección de los mejores plátanos, que son lavados, pelados y cortados en rodajas uniformes.
+
+                Luego, se fríen a temperatura controlada con aceite de alta calidad para lograr un dorado perfecto y una textura ligera. Posteriormente, se escurren y se sazonan cuidadosamente para resaltar su sabor natural.
+                
+                Finalmente, pasan por un proceso de enfriamiento y empaque, donde se sellan herméticamente para conservar su frescura. En JuanMaduro, combinamos tradición e innovación para ofrecerte platanitos irresistibles en cada bocado..</p>
+            <div class="galeria">
+                <img src="2.jpeg" alt="Fabricación 1">
+                <img src="3.jpeg" alt="Fabricación 2">
+            </div>
+        </section>
+ 
+        <section id="productos" class="seccion oculto">
+            <h2>Productos</h2>
+            <p>Explora nuestra variedad de platanitos para todos los gustos...</p>
+            <div class="galeria">
+                <img src="pl4.jpeg" alt="Productos 1">
+                <img src="limon.jpeg" alt="Productos 2">
+            </div>
+        </section>
+ 
+        <section id="recetas" class="seccion oculto">
+            <h2>Recetas</h2>
+            <p>Prepara deliciosas recetas con nuestros platanitos:</p>
+            <ul>
+                <li>Platanitos con Guacamole</li>
+                <li>Platanitos con Carne Desmechada y Queso</li>
+            </ul>
+            <div class="galeria">
+                <img src="carne.jpeg" alt="Receta 1">
+                <img src="carne2.jpeg" alt="Receta 2">
+            </div>
+        </section>
+ 
+        <section id="cultivo" class="seccion oculto">
+            <h2>Cultivo</h2>
+            <p>En JuanMaduro, cultivamos nuestros plátanos con un compromiso inquebrantable con la calidad y la sostenibilidad. Seleccionamos cuidadosamente las mejores tierras, garantizando un suelo rico en nutrientes que favorece el crecimiento óptimo de los plátanos.
+
+                Nuestros cultivos siguen prácticas agrícolas responsables, minimizando el impacto ambiental y asegurando productos naturales y saludables. Cada plátano es cosechado en su punto exacto de maduración, preservando su sabor, textura y valor nutricional..</p>
+            <div class="galeria">
+                <img src="cul1.webp" alt="Cultivo 1">
+                <img src="cul2.jpeg" alt="Cultivo 2">
+            </div>
+        </section>
+ 
+        <section id="beneficios" class="seccion oculto">
+            <h2>Beneficios</h2>
+            <p>El plátano es una fruta versátil y altamente nutritiva que aporta múltiples beneficios para la salud. Su alto contenido de potasio ayuda a regular la presión arterial y fortalece el sistema cardiovascular. Además, es una excelente fuente de fibra, favoreciendo la digestión y contribuyendo a una mejor salud intestinal.
+
+                Gracias a sus carbohidratos naturales, el plátano es una gran fuente de energía, ideal para deportistas y personas con un estilo de vida activo. También contiene vitaminas B6 y C, que refuerzan el sistema inmunológico y favorecen la producción de serotonina, mejorando el estado de ánimo.
+                
+                Además de ser saludable, su sabor dulce y su practicidad lo convierten en un alimento ideal para cualquier momento del día, ya sea solo, en batidos, postres o como complemento en diversas recetas.</p>
+            <div class="galeria">
+                <img src="ben1.jpeg" alt="Beneficio 1">
+                <img src="ben2.png" alt="Beneficio 2">
+            </div>
+        </section>
+ 
+        <section id="contacto" class="seccion oculto">
+            <h2>Contacto</h2>
+            <p>Si deseas más información sobre nuestros productos, tienes alguna consulta o simplemente quieres compartir tu experiencia con nosotros, no dudes en escribirnos. Estamos aquí para atenderte y brindarte la mejor atención posible. <a href="mailto:info@juanmaduro.com">info@juanmaduro.com</a>.</p>
+        </section>
+    </main>
+ 
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 JuanMaduro - Los Mejores platanitos del mercado.</p>
+        </div>
+    </footer>
+ 
+</body>
+</html>
